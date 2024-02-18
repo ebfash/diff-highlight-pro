@@ -1,0 +1,150 @@
+pre[data-line-red],
+pre[data-line-green],
+pre[data-line-yellow] {
+	position: relative;
+	padding: 1em 0 1em 3em;
+}
+
+.line-highlight-red,
+.line-highlight-green,
+.line-highlight-yellow {
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding: inherit 0;
+	margin-top: 1em; /* Same as .prism’s padding-top */
+
+	background: hsla(24, 20%, 50%,.08);
+	background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+	
+
+	pointer-events: none;
+
+	line-height: inherit;
+	white-space: pre;
+}
+
+@media print {
+	.line-highlight-red,
+	.line-highlight-green,
+	.line-highlight-yellow {
+		/*
+		 * This will prevent browsers from replacing the background color with white.
+		 * It's necessary because the element is layered on top of the displayed code.
+		 */
+		-webkit-print-color-adjust: exact;
+		color-adjust: exact;
+	}
+}
+
+.line-highlight-red:before,
+.line-highlight-red[data-end]:after,
+.line-highlight-green:before,
+.line-highlight-green[data-end]:after,
+.line-highlight-yellow:before,
+.line-highlight-yellow[data-end]:after
+{
+	/*content: attr(data-start);*/
+	/*position: absolute;
+	top: .4em;
+	left: .6em;
+	min-width: 1em;
+	padding: 0 .5em;
+	font: bold 65%/1.5 sans-serif;
+	text-align: center;
+	vertical-align: .3em;
+	text-shadow: none;*/
+	/*background-color: hsla(24, 20%, 50%,.4);
+	color: hsl(24, 20%, 95%);
+	border-radius: 999px;
+	box-shadow: 0 1px white;*/
+}
+
+.line-highlight-red[data-end]:after,
+.line-highlight-green[data-end]:after,
+.line-highlight-yellow[data-end]:after {
+	/*content: attr(data-end);*/
+	
+}
+
+/* CHANGE */
+
+.line-highlight-red {
+	background: linear-gradient(to right, hsla(9, 88%, 43%, 0.2) 70%, hsla(2, 91%, 43%, 0)); /* red */
+}
+
+.line-highlight-green {
+	background: linear-gradient(to right, hsla(108, 88%, 43%, 0.2) 70%, hsla(107, 91%, 43%, 0)); /* green */
+}
+
+.line-highlight-yellow {
+	background: linear-gradient(to right, hsla(58, 100%, 50%, 0.2) 70%, hsla(55, 98%, 49%, 0)); /* yellow */
+}
+
+
+.line-numbers .line-highlight-red:after {
+	font-size: 18px;
+	color: #D96067;
+	vertical-align: .3em;
+	content: " -"
+}
+
+.line-numbers .line-highlight-green:after {
+	font-size: 18px;
+	color: #1DA205;
+	vertical-align: .3em;
+	content: " +"
+}
+
+.line-numbers .line-highlight-yellow:after {
+	content: none
+}
+
+
+
+.line-highlight-red:before {
+	color: #D96067;
+	content: " -"
+}
+
+.line-highlight-green:before {
+	color: #1DA205;
+	content: " +"
+}
+
+.line-highlight-yellow:before {
+	content: none
+}
+
+.line-numbers .line-highlight-red:before,
+.line-numbers .line-highlight-green:before,
+.line-numbers .line-highlight-yellow:before {
+	content: none
+}
+
+
+/* widt: 3em works for line-numbers below 1000 lines */
+/*
+pre[data-line-red] span :before {
+
+	pointer-events: none;
+	top: 0;
+	bottom: 0;
+	font-size: 100%;
+	left: -3.8em;
+	width: 3em; 
+	letter-spacing: -1px;
+	border-right: 1px solid #999;
+	margin-right: 0.8em;
+	padding-right: 0.8em;
+	padding-top: 0;
+	padding-bottom: 0;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+}
+*/
+

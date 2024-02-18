@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PA React Themes</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/prism.css">
+        <link rel="stylesheet" href="./css/prism-diff-min.css">
+        <link rel="stylesheet" href="./css/diff-highlight-pro.css">
+    
+    </head>
+    <body>
+        <div class="content">
+            <div class="main">
+
+
+<h2>If you find "Diff Highlight" that uses Prism complicated, this is a much easier alternative...</h2>
+
+<br><br>
+<hr>
+<br><br>
+
+<h2>Code with "Default Prism Diff Highlight"</h2>
+
+<pre><code class="language-markup"></code>
+&lt;pre class="language-diff-javascript line-numbers" tabindex="0">&lt;code class="diff-highlight language-diff-javascript">&lt;span class="token coord">@@ -4,6 +4,5 @@&lt;/span>
+&lt;span class="token deleted-sign deleted language-javascript">&lt;span class="token prefix deleted">-&lt;/span>    &lt;span class="token keyword">let&lt;/span> foo &lt;span class="token operator">=&lt;/span> bar&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">baz&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">[&lt;/span>&lt;span class="token number">1&lt;/span>&lt;span class="token punctuation">,&lt;/span> &lt;span class="token number">2&lt;/span>&lt;span class="token punctuation">,&lt;/span> &lt;span class="token number">3&lt;/span>&lt;span class="token punctuation">]&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
+&lt;span class="token prefix deleted">-&lt;/span>    foo &lt;span class="token operator">=&lt;/span> foo &lt;span class="token operator">+&lt;/span> &lt;span class="token number">1&lt;/span>&lt;span class="token punctuation">;&lt;/span>
+&lt;/span>&lt;span class="token inserted-sign inserted language-javascript">&lt;span class="token prefix inserted">+&lt;/span>    &lt;span class="token keyword">const&lt;/span> foo &lt;span class="token operator">=&lt;/span> bar&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">baz&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">[&lt;/span>&lt;span class="token number">1&lt;/span>&lt;span class="token punctuation">,&lt;/span> &lt;span class="token number">2&lt;/span>&lt;span class="token punctuation">,&lt;/span> &lt;span class="token number">3&lt;/span>&lt;span class="token punctuation">]&lt;/span>&lt;span class="token punctuation">)&lt;/span> &lt;span class="token operator">+&lt;/span> &lt;span class="token number">1&lt;/span>&lt;span class="token punctuation">;&lt;/span>
+&lt;/span>&lt;span class="token unchanged language-javascript">&lt;span class="token prefix unchanged"> &lt;/span>    console&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">log&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token template-string">&lt;span class="token template-punctuation string">\`&lt;/span>&lt;span class="token string">foo: &lt;/span>&lt;span class="token interpolation">&lt;span class="token interpolation-punctuation punctuation">\${&lt;/span>foo&lt;span class="token interpolation-punctuation punctuation">}&lt;/span>&lt;/span>&lt;span class="token template-punctuation string">\`&lt;/span>&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>&lt;/span>&lt;/code>&lt;/pre>
+</code></pre>
+
+<p>With line numbers (Add class="line-numbers")</p>
+
+<pre class="language-diff-javascript line-numbers" tabindex="0"><code class="diff-highlight language-diff-javascript"><span class="token coord">@@ -4,6 +4,5 @@</span>
+<span class="token deleted-sign deleted language-javascript"><span class="token prefix deleted">-</span>    <span class="token keyword">let</span> foo <span class="token operator">=</span> bar<span class="token punctuation">.</span><span class="token function">baz</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token prefix deleted">-</span>    foo <span class="token operator">=</span> foo <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</span><span class="token inserted-sign inserted language-javascript"><span class="token prefix inserted">+</span>    <span class="token keyword">const</span> foo <span class="token operator">=</span> bar<span class="token punctuation">.</span><span class="token function">baz</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</span><span class="token unchanged language-javascript"><span class="token prefix unchanged"> </span>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">\`</span><span class="token string">foo: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">\${</span>foo<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">\`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></span></code></pre>
+
+<p>Without line numbers (Remove class="line-numbers")</p>
+
+<pre class="language-diff-javascript" tabindex="0"><code class="diff-highlight language-diff-javascript"><span class="token coord">@@ -4,6 +4,5 @@</span>
+<span class="token deleted-sign deleted language-javascript"><span class="token prefix deleted">-</span>    <span class="token keyword">let</span> foo <span class="token operator">=</span> bar<span class="token punctuation">.</span><span class="token function">baz</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token prefix deleted">-</span>    foo <span class="token operator">=</span> foo <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</span><span class="token inserted-sign inserted language-javascript"><span class="token prefix inserted">+</span>    <span class="token keyword">const</span> foo <span class="token operator">=</span> bar<span class="token punctuation">.</span><span class="token function">baz</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</span><span class="token unchanged language-javascript"><span class="token prefix unchanged"> </span>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">\`</span><span class="token string">foo: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">\${</span>foo<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">\`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></span></code></pre>
+                
+
+<br><br>
+<hr>
+<br><br>
+
+
+<h2>Code with "Diff Highlight Pro"</h2>
+
+<pre><code class="language-javascript">
+&lt;pre data-line-red="2,3" data-line-green="4" data-line-yellow="5" class="line-numbers">
+&lt;code class="language-javascript"><br>
+    @@ -4,6 +4,5 @@<br>
+        let foo = bar.baz([1, 2, 3]);<br>
+        foo = foo + 1;<br>
+        const foo = bar.baz([1, 2, 3]) + 1;<br>
+            console.log(`foo: ${foo}`);<br>
+&lt;/code>
+&lt;/pre><br>
+</code></pre>
+
+<p>With line numbers (Add class="line-numbers")</p>
+<pre data-line-red="2,3" data-line-green="4" data-line-yellow="5" class="line-numbers"><code class="language-javascript">
+@@ -4,6 +4,5 @@
+    let foo = bar.baz([1, 2, 3]);
+    foo = foo + 1;
+    const foo = bar.baz([1, 2, 3]) + 1;
+        console.log(\`foo: \${foo}\`);
+</code></pre>
+
+<p>Without line numbers (Remove class="line-numbers")</p>
+
+            <pre data-line-red="2,3" data-line-green="4" data-line-yellow="5" class=""><code class="language-javascript">
+@@ -4,6 +4,5 @@
+    let foo = bar.baz([1, 2, 3]);
+    foo = foo + 1;
+    const foo = bar.baz([1, 2, 3]) + 1;
+        console.log(\`foo: \${foo}\`);
+</code></pre>
+
+<br><br>
+<hr>
+<br><br>
+
+<h2>Mode of Use</h2>
+<br>
+<p>Add:</p>
+&lt;link rel="stylesheet" href="./css/diff-highlight-pro.css"><br>
+&lt;script src="./js/diff-highlight-pro.js"></script><br>
+<br>
+<p>data-line-red="" for red lines</p>
+<p>data-line-green="" for green lines</p>
+<p>data-line-yellow="" for yellow lines</p>
+<br>
+<p>Single line --> 4</p>
+<p>Two lines   --> 4,8</p>
+<p>Range      --> 4-6</p>
+<p>Mixed       --> 4,6-7</p>
+<br>
+<pre><code class="language-javascript">
+&lt;pre data-line-red="2,3" data-line-green="4" data-line-yellow="5" class="line-numbers">
+&lt;code class="language-javascript"><br>
+    Your Code...
+&lt;/code>
+&lt;/pre><br>
+</code></pre>
+           
+            </div>
+        </div>
+    
+        <script src="./js/prism.js"></script>
+        <script src="./js/components/prism-diff.min.js"></script>        
+        <script src="./js/diff-highlight-pro.js"></script>
+    </body>
+</html>
