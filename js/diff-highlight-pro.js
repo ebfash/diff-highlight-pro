@@ -183,7 +183,6 @@
 				if (hasLineNumbers && Prism.plugins.lineNumbers) {
 					var startNode = Prism.plugins.lineNumbers.getLine(pre, start);
 					var endNode = Prism.plugins.lineNumbers.getLine(pre, end);
-					console.log(startNode, endNode)
 
 					if (startNode) {
 						var top = startNode.offsetTop + codePreOffset + 'px';
@@ -201,7 +200,6 @@
 				} else {
 					mutateActions.push(function () {
 						line.setAttribute('data-start', String(start));
-						console.log(line)
 
 						if (end > start) {
 							line.setAttribute('data-end', String(end));
