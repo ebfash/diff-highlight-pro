@@ -17,6 +17,11 @@ Code with "Default Prism Diff Highlight"
 &lt;/span>&lt;span class="token unchanged language-javascript">&lt;span class="token prefix unchanged"> &lt;/span>    console&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">log&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token template-string">&lt;span class="token template-punctuation string">\`&lt;/span>&lt;span class="token string">foo: &lt;/span>&lt;span class="token interpolation">&lt;span class="token interpolation-punctuation punctuation">\${&lt;/span>foo&lt;span class="token interpolation-punctuation punctuation">}&lt;/span>&lt;/span>&lt;span class="token template-punctuation string">\`&lt;/span>&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>&lt;/span>&lt;/code>&lt;/pre>
 </code></pre>
   
+<p>With line numbers (Add class="line-numbers")</p>
+<img src="./img/01.png" alt="Diff Highlight With line numbers" style="height: 224px; width:792px;"/>
+
+<p>Without line numbers (Remove class="line-numbers")</p>
+<img src="./img/02.png" alt="Diff Highlight Without line numbers" style="height: 223px; width:794px;"/>
 
 * * *
 
@@ -38,7 +43,11 @@ Code with "Diff Highlight Pro"
     </pre>
     
 
-  
+<p>With line numbers (Add class="line-numbers")</p>
+<img src="./img/03.png" alt="Diff Highlight Pro With line numbers" style="height: 252px; width:793px;"/>
+
+<p>Without line numbers (Remove class="line-numbers")</p>
+<img src="./img/04.png" alt="Diff Highlight Pro Without line numbers" style="height: 253px; width:792px;"/>
 
 * * *
 
@@ -74,9 +83,5 @@ Mixed --> 4,6-7
 
   
 
-    
-    <pre data-line-red="2,3" data-line-green="4" data-line-yellow="5" class="line-numbers">
-    <code class="language-javascript">
-        Your Code...
-    </code>
-    </pre>  PA React Themes    
+<p>Without line numbers (Remove class="line-numbers")</p>
+<img src="./img/05.png" alt="Diff Highlight Pro Example" style="height: 259px; width:1201px;"/>
