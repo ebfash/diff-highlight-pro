@@ -1,6 +1,6 @@
 If you find "Diff Highlight" that uses Prism complicated, this is a much easier alternative...
 
-<a href="./index.html">See documentation</a>
+Open the index.html to see it in action
 
 * * *
 
