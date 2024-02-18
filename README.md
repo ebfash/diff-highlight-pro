@@ -83,5 +83,5 @@ Mixed --> 4,6-7
 
   
 
-<p>Without line numbers (Remove class="line-numbers")</p>
+<h3>Example</h3>
 <img src="./img/05.png" alt="Diff Highlight Pro Example" style="height: 259px; width:1201px;"/>
